@@ -13,7 +13,7 @@ __controller mapping__
 ```
 Firmware v0.14.0
 
-JOY directions: z, x, m, k
-BUTTON A      : l
-BUTTON B      : ;
+JOY DIR  : z, x, m, k
+BUTTON A : l
+BUTTON B : ;
 ```
