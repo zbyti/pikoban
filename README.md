@@ -11,7 +11,7 @@ basic: load "pikoban.neo"
 ```
 __controller mapping__
 ```
-Firmware v0.14.0
+Firmware v0.14.1
 
 JOY DIR  : z, x, m, k
 BUTTON A : l
