@@ -339,11 +339,8 @@ begin
     posX := PLAYER_X + 3 * TILE_SIZE;
     posY := PLAYER_Y + 3 * TILE_SIZE;
 
-    Move(LEVELS, pointer(TILE_ADDRESS + 3), BOARD_SIZE);
     NeoSelectTileMap(TILE_ADDRESS, 0, 0);
-
     initBoard;
-    //debugInfo;
 
     GotoXY(0,28); write('Use controller to move.');
     GotoXY(0,29); write('Press BUTTON A to reset the level.');
@@ -367,8 +364,6 @@ begin
             end;
             joyDelay := JOY_DELAY;
 
-            //debugInfo;
-
             NeoDrawTileMap(CENTER_X, CENTER_Y, CENTER_X + WIDTH * TILE_SIZE, CENTER_Y + HEIGHT * TILE_SIZE);
             NeoUpdateSprite(0, posX, posY, 0, 0, 0);
             GotoXY(9,1); write(gameMove);
@@ -381,7 +376,6 @@ begin
                 NeoUpdateSprite(0, posX, posY, 1, 0, 0);
                 for tmpB1 := 1 to 90 do NeoWaitForVblank;
 
-                //fillbyte(completed, SET_SIZE + 1, 1);
                 tmpB2 := 0;
                 for tmpB1 := 0 to SET_SIZE do
                     if completed[tmpB1] = 1 then inc(tmpB2);
