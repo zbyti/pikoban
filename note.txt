@@ -1,0 +1,138 @@
+//--------------------------------
+
+    SYSTEM.PAS
+
+    NEO_COLOR_BLACK
+    NEO_COLOR_RED
+    NEO_COLOR_GREEN
+    NEO_COLOR_YELLOW
+    NEO_COLOR_BLUE
+    NEO_COLOR_MAGENTA
+    NEO_COLOR_CYAN
+    NEO_COLOR_WHITE
+    NEO_COLOR_ALT_BLACK
+    NEO_COLOR_DARK_GREY
+    NEO_COLOR_DARK_GREEN
+    NEO_COLOR_ORANGE
+    NEO_COLOR_DARK_ORANGE
+    NEO_COLOR_BROWN
+    NEO_COLOR_PINK
+    NEO_COLOR_LIGHT_GREY
+
+    NEO_CURSOR_LEFT
+    NEO_CURSOR_RIGHT
+    NEO_INSERT
+    NEO_PAGE_DOWN
+    NEO_END
+    NEO_BACKSPACE
+    NEO_HTAB                 // horizontal tab
+    NEO_LINE_FEED
+    NEO_CLEAR_SCREEN
+    NEO_ENTER
+    NEO_PAGE_UP
+    NEO_CURSOR_DOWN
+    NEO_CURSOR_HOME
+    NEO_VTAB                 // vertical tab
+    NEO_CURSOR_UP
+    NEO_CURSOR_REV           // cursor reverse
+    NEO_DELETE
+    NEO_ESCAPE               // general break – e.g. exits BASIC
+
+//--------------------------------
+
+    PALETA DOMYŚLNA
+      0,   0,   0,      //  0. #000000 black / transparent for sprites.
+    255,   0,  77,      //  1. #FF004D red
+      0, 228,  54,      //  2. #00E436 green
+    255, 236,  39,      //  3. #FFEC27 yellow
+     29,  43,  83,      //  4. #1D2B53 dark-blue
+    126,  37,  83,      //  5. #7E2553 dark-purple
+     41, 173, 255,      //  6. #29ADFF blue
+    255, 241, 232,      //  7. #FFF1E8 white
+
+      0,   0,   0,      //  8. #000000 solid black
+     95,  87,  79,      //  9. #5F574F dark-grey
+      0, 135,  81,      // 10. #008751 dark-green
+    255, 163,   0,      // 11. #FFA300 orange
+    171,  82,  54,      // 12. #AB5236 brown
+    131, 118, 156,      // 13. #83769C lavender
+    255, 204, 170,      // 14. #FFCCAA light-peach
+    194, 195, 199,      // 15. #C2C3C7 light-grey
+
+//--------------------------------
+
+    NeoSetPalette($00, r, g, b); // kolor  0 znaki / kafelki
+    NeoSetPalette($01, r, g, b); // kolor  1 znaki / kafelki
+    NeoSetPalette($02, r, g, b); // kolor  2 znaki / kafelki
+    NeoSetPalette($03, r, g, b); // kolor  3 znaki / kafelki
+    NeoSetPalette($04, r, g, b); // kolor  4 znaki / kafelki
+    NeoSetPalette($05, r, g, b); // kolor  5 znaki / kafelki
+    NeoSetPalette($06, r, g, b); // kolor  6 znaki / kafelki
+    NeoSetPalette($07, r, g, b); // kolor  7 znaki / kafelki
+    NeoSetPalette($08, r, g, b); // kolor  8 znaki / kafelki
+    NeoSetPalette($09, r, g, b); // kolor  9 znaki / kafelki
+    NeoSetPalette($0a, r, g, b); // kolor 10 znaki / kafelki
+    NeoSetPalette($0b, r, g, b); // kolor 11 znaki / kafelki
+    NeoSetPalette($0c, r, g, b); // kolor 12 znaki / kafelki
+    NeoSetPalette($0d, r, g, b); // kolor 13 znaki / kafelki
+    NeoSetPalette($0e, r, g, b); // kolor 14 znaki / kafelki
+    NeoSetPalette($0f, r, g, b); // kolor 15 znaki / kafelki
+
+//--------------------------------
+
+    NeoSetPalette(---, r, g, b); // kolor  0 sprajtów 16x16 transparent
+    NeoSetPalette($10, r, g, b); // kolor  1 sprajtów 16x16
+    NeoSetPalette($20, r, g, b); // kolor  2 sprajtów 16x16
+    NeoSetPalette($30, r, g, b); // kolor  3 sprajtów 16x16
+    NeoSetPalette($40, r, g, b); // kolor  4 sprajtów 16x16
+    NeoSetPalette($50, r, g, b); // kolor  5 sprajtów 16x16
+    NeoSetPalette($60, r, g, b); // kolor  6 sprajtów 16x16
+    NeoSetPalette($70, r, g, b); // kolor  7 sprajtów 16x16
+    NeoSetPalette($80, r, g, b); // kolor  8 sprajtów 16x16
+    NeoSetPalette($90, r, g, b); // kolor  9 sprajtów 16x16
+    NeoSetPalette($a0, r, g, b); // kolor 10 sprajtów 16x16
+    NeoSetPalette($b0, r, g, b); // kolor 11 sprajtów 16x16
+    NeoSetPalette($c0, r, g, b); // kolor 12 sprajtów 16x16
+    NeoSetPalette($d0, r, g, b); // kolor 13 sprajtów 16x16
+    NeoSetPalette($e0, r, g, b); // kolor 14 sprajtów 16x16
+    NeoSetPalette($f0, r, g, b); // kolor 15 sprajtów 16x16
+
+//--------------------------------
+
+    NeoSetPalette(---, r, g, b); // kolor  0 sprajtów 32x32 transparent
+    NeoSetPalette($1a, r, g, b); // kolor  1 sprajtów 32x32
+    NeoSetPalette($2a, r, g, b); // kolor  2 sprajtów 32x32
+    NeoSetPalette($3a, r, g, b); // kolor  3 sprajtów 32x32
+    NeoSetPalette($4a, r, g, b); // kolor  4 sprajtów 32x32
+    NeoSetPalette($5a, r, g, b); // kolor  5 sprajtów 32x32
+    NeoSetPalette($6a, r, g, b); // kolor  6 sprajtów 32x32
+    NeoSetPalette($7a, r, g, b); // kolor  7 sprajtów 32x32
+    NeoSetPalette($8a, r, g, b); // kolor  8 sprajtów 32x32
+    NeoSetPalette($9a, r, g, b); // kolor  9 sprajtów 32x32
+    NeoSetPalette($aa, r, g, b); // kolor 10 sprajtów 32x32
+    NeoSetPalette($ba, r, g, b); // kolor 11 sprajtów 32x32
+    NeoSetPalette($ca, r, g, b); // kolor 12 sprajtów 32x32
+    NeoSetPalette($da, r, g, b); // kolor 13 sprajtów 32x32
+    NeoSetPalette($ea, r, g, b); // kolor 14 sprajtów 32x32
+    NeoSetPalette($fa, r, g, b); // kolor 15 sprajtów 32x32
+
+//--------------------------------
+
+    ?? wartość $80 / $8080 niby nie robi update
+
+    NeoUpdateSprite(0, CENTER_X, CENTER_Y,       0, 0, 0); // 16x16 sprite 0
+    NeoUpdateSprite(0, CENTER_X, CENTER_Y, 64 or 0, 0, 0); // 32x32 sprite 0
+
+//--------------------------------
+
+Name    Width   Height  Bytes   Elements    Memory
+Tiles      16       16    128         64      8192
+Sprites    16       16    128         32      4096
+Sprites    32       32    512         16      8192
+                                     112     20480
+
+//--------------------------------
+
+neo pikoban_0x9000.bin@9000 pikoban.gfx@ffff run@9000
+
+python exec.zip output/main_0x9000.bin@9000 run@9000 -ostorage/pikoban.neo

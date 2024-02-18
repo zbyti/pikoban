@@ -1,0 +1,2 @@
+#!/bin/bash
+./neo pikoban_0x9000.bin@9000 run@9000
