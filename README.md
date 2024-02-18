@@ -9,7 +9,7 @@ __run__
 emulator: neo pikoban_0x9000.bin@9000 run@9000
 basic: load "pikoban.neo"
 ```
-__controler mapping__
+__controller mapping__
 ```
 Firmware v0.14.0
 
