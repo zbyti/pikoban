@@ -6,6 +6,7 @@ program Pikoban;
     https://www.bing.com/images/create
     https://fontmeme.com/pixel-fonts/
     https://github.com/tebe6502/Mad-Pascal
+    https://mads.atari8.info/doc/pl/
     https://fujinet.pl/neo6502/neo6502.html
     https://www.neo6502.com/
     convert.py by Bocianu
