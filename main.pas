@@ -370,9 +370,9 @@ begin
 
             NeoDrawTileMap(CENTER_X, CENTER_Y, CENTER_X + WIDTH * TILE_SIZE, CENTER_Y + HEIGHT * TILE_SIZE);
             NeoUpdateSprite(0, posX, posY, 0, 0, 0);
-            GotoXY(9,1); write(gameMove, '    ');
-            GotoXY(9,2); write(gamePush, '    ');
-            GotoXY(9,3); write(crates,   '    ');
+            GotoXY(9,1); write(gameMove);
+            GotoXY(9,2); write(gamePush);
+            GotoXY(9,3); write(crates, ' ');
 
             if crates = 0 then begin
                 completed[lv] := 1;
