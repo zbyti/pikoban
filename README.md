@@ -11,8 +11,9 @@ basic: load "pikoban.neo"
 ```
 __controller mapping__
 ```
-Firmware v0.14.4
+Firmware v0.16.1
 
+JOY DIR  : cursor keys
 JOY DIR  : w, s, a, d
 BUTTON A : o
 BUTTON B : p

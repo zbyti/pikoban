@@ -19,12 +19,12 @@ uses crt, neo6502;
 //------------------------------------------------------------------------------
 
 const
-    ASS_GFX       = 'pikoban.gfx';
-    ASS_EMPTY_PAL = 'pikoban_empty';
-    ASS_TITLE_PAL = 'pikoban_title';
-    ASS_TITLE_BMP = 'pikoban_title';
-    ASS_WIN_PAL   = 'pikoban_winner';
-    ASS_WIN_BMP   = 'pikoban_winner';
+    ASS_GFX       = 'data/pikoban.gfx';
+    ASS_EMPTY_PAL = 'data/pikoban_empty';
+    ASS_TITLE_PAL = 'data/pikoban_title';
+    ASS_TITLE_BMP = 'data/pikoban_title';
+    ASS_WIN_PAL   = 'data/pikoban_winner';
+    ASS_WIN_BMP   = 'data/pikoban_winner';
     JOY_LEFT      = %000001;
     JOY_RIGHT     = %000010;
     JOY_UP        = %000100;
