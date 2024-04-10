@@ -101,7 +101,7 @@ begin
         NeoLoad(chunkname, BUF);
         o := 0;
         repeat
-            NeoSetColor(0, buffer[o], 0, 0, 0);
+            NeoSetDefaults(0, buffer[o], 0, 0, 0);
             NeoDrawPixel(x, y);
             inc(x); inc(o);
             if x=320 then begin
@@ -264,7 +264,7 @@ begin
     clrscr;
 
     LoadPalette(ASS_EMPTY_PAL);
-    NeoSetColor(2,2,1,0,0);
+    NeoSetDefaults(2,2,1,0,0);
     NeoDrawRect(0, 0, 6, 7 * 34);
     GotoXY(22,30); write('loading...');
 
@@ -286,7 +286,7 @@ begin
     clrscr;
 
     LoadPalette(ASS_EMPTY_PAL);
-    NeoSetColor(2,2,1,0,0);
+    NeoSetDefaults(2,2,1,0,0);
     NeoDrawRect(0, 0, 6, 7 * 34);
     GotoXY(22,30); write('loading...');
 
@@ -327,7 +327,7 @@ begin
     NeoResetSprites;
     TextBackground(10);
     TextColor(7);
-    //NeoSetColor(2,2,0,0,0);
+    //NeoSetDefaults(2,2,0,0,0);
     clrscr;
 
     lv := 0;
