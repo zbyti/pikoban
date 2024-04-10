@@ -349,7 +349,7 @@ begin
     repeat
         NeoWaitForVblank;
 
-        joy := NeoGetJoy(1);
+        joy := NeoGetJoy(0);
         if joyDelay > 0 then Dec(joyDelay);
         if (joyDelay = 0) and (joy <> 0) then begin
 
